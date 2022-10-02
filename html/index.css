@@ -16,6 +16,6 @@ div.sourceCode {
   background:rgba(0,0,0,0.9);
   border:1px solid rgba(255,255,255,0.15);
   color:#eaeaea;
-  padding:10px;
   border-radius:2px;
+  padding-left:10px;
 }
