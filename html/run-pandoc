@@ -1,0 +1,10 @@
+input_file=$1
+output_file=$2
+pandoc \
+    --css=/tmp/src-html/styles.css \
+    --standalone \
+    --template=/tmp/pandoc-config/template.html \
+    -t html \
+    /tmp/pandoc-config/metadata.yml \
+    $input_file \
+    -o $output_file
