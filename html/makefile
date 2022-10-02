@@ -1,4 +1,5 @@
 md-to-html:
+	cp index.css /tmp/
 	pandoc \
 		--css=index.css \
 		--standalone \
@@ -7,7 +8,7 @@ md-to-html:
 		--metadata lang="es" \
 		-t html \
 		page.md \
-		-o page.html
+		-o /tmp/page.html
 
 export-template-html:
 	# https://pandoc.org/MANUAL.html#option--print-default-template
