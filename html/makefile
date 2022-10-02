@@ -4,9 +4,8 @@ md-to-html:
 		--css=index.css \
 		--standalone \
 		--template=pandoc-config/template.html \
-		--metadata title="Welcome! :)" \
-		--metadata lang="es" \
 		-t html \
+		pandoc-config/metadata.yml \
 		page.md \
 		-o /tmp/page.html
 
