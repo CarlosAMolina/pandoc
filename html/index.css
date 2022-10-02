@@ -16,6 +16,9 @@ p {
   color:#eaeaea;
 }
 
+a {
+  color: #63c0f5;
+}
 
 div.sourceCode {
   background:rgba(0,0,0,0.9);
