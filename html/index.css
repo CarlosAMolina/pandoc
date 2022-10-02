@@ -1,0 +1,21 @@
+h2 {
+  color:#b5e853;
+}
+
+p {
+  color:#eaeaea;
+}
+
+body {
+  background-color: #1a1a1a;
+  font-size: 16px;
+}
+
+div.sourceCode {
+  line-height: 1.5;
+  background:rgba(0,0,0,0.9);
+  border:1px solid rgba(255,255,255,0.15);
+  color:#eaeaea;
+  padding:10px;
+  border-radius:2px;
+}
