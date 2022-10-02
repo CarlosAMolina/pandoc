@@ -4,7 +4,7 @@ md-to-html:
 		--css=index.css \
 		--standalone \
 		--template=pandoc-config/template.html \
-		--metadata title="Carlos A Molina" \
+		--metadata title="Welcome! :)" \
 		--metadata lang="es" \
 		-t html \
 		page.md \
