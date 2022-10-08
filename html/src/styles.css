@@ -8,8 +8,12 @@ body {
   margin: 0 auto;
 }
 
-h1, h2, h3 {
+h1, h2, h3, ul, li {
   color:#b5e853;
+}
+
+ul, li {
+  list-style-type: disc;
 }
 
 p {
