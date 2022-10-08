@@ -3,10 +3,10 @@
 input_file=$1
 output_file=$2
 
-DESTINATION_PATHNAME=/tmp/src-html
+HTML_DESTINATION_PATHNAME=/tmp/src-html
 
 pandoc \
-    --css="${DESTINATION_PATHNAME}/styles.css" \
+    --css="${HTML_DESTINATION_PATHNAME}/styles.css" \
     --standalone \
     --template=/tmp/pandoc-config/template.html \
     -t html \

@@ -1,15 +1,15 @@
-DESTINATION_PATHNAME:=/tmp/src-html
+HTML_DESTINATION_PATHNAME:=/tmp/src-html
 
 md-to-html:
-	rm -rf $(DESTINATION_PATHNAME)
-	mkdir -p $(DESTINATION_PATHNAME)/other-pages
-	cp src/styles.css $(DESTINATION_PATHNAME)
+	rm -rf $(HTML_DESTINATION_PATHNAME)
+	mkdir -p $(HTML_DESTINATION_PATHNAME)/other-pages
+	cp src/styles.css $(HTML_DESTINATION_PATHNAME)
 	cp -r pandoc-config/ /tmp/
-	./run-pandoc src/page.md $(DESTINATION_PATHNAME)/page.html
-	./run-pandoc src/other-pages/page-2.md $(DESTINATION_PATHNAME)/other-pages/page-2.html
+	./run-pandoc src/page.md $(HTML_DESTINATION_PATHNAME)/page.html
+	./run-pandoc src/other-pages/page-2.md $(HTML_DESTINATION_PATHNAME)/other-pages/page-2.html
 
 open-html:
-	firefox $(DESTINATION_PATHNAME)/page.html
+	firefox $(HTML_DESTINATION_PATHNAME)/page.html
 
 all: md-to-html open-html
 
