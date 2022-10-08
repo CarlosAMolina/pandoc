@@ -1,7 +1,12 @@
+#!/bin/bash
+
 input_file=$1
 output_file=$2
+
+DESTINATION_PATHNAME=/tmp/src-html
+
 pandoc \
-    --css=/tmp/src-html/styles.css \
+    --css="${DESTINATION_PATHNAME}/styles.css" \
     --standalone \
     --template=/tmp/pandoc-config/template.html \
     -t html \
