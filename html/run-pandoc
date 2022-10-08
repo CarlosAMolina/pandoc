@@ -3,6 +3,7 @@ output_file=$2
 pandoc \
     --css=/tmp/src-html/styles.css \
     --toc \
+    --toc-depth=6 \
     --standalone \
     --template=/tmp/pandoc-config/template.html \
     -t html \
