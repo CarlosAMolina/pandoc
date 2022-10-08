@@ -1,3 +1,9 @@
+## Contents
+
+- [Section](#section)
+- [Section 2](#section-2)
+    - [Subsection foo](#subsection-foo)
+
 ## Section
 
 Code example:
@@ -11,3 +17,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Best web in the world: <https://cmoli.es>.
 
 Second page: [link](other-pages/page-2.html).
+
+## Section 2
+
+This is section 2.
+
+### Subsection foo
+
+Foo subsection.
