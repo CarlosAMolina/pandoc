@@ -1,3 +1,5 @@
+# Foo title
+
 ## Section
 
 Code example:
