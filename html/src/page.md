@@ -28,6 +28,12 @@ List example:
 - El 1.
 - El 2.
 
+Incorrect html rendered list example:
+
+- El 1.
+
+- El 2.
+
 ## Section 2
 
 This is section 2.
