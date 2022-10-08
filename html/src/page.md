@@ -23,6 +23,11 @@ Blockquote example:
 
   > VPN and email are treated differently within the current Swiss legal framework. We can be legally compelled to provide logs for email, but not for VPN.
 
+List example:
+
+- El 1.
+- El 2.
+
 ## Section 2
 
 This is section 2.
