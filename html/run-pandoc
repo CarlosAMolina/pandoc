@@ -4,9 +4,10 @@ input_file=$1
 output_pathname=$2
 html_destination_pathname=$3
 pandoc_config_destination_pathname=$4
+css_pathname=$5
 
 pandoc \
-    --css="${html_destination_pathname}/styles.css" \
+    --css="${css_pathname}" \
     --standalone \
     --template="${pandoc_config_destination_pathname}/template.html" \
     -t html \
