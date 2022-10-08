@@ -1,12 +1,10 @@
 #!/bin/bash
 
-input_file=$1
-output_pathname=$2
-html_destination_pathname=$3
-pandoc_config_destination_pathname=$4
-css_pathname=$5
-pandoc_template_pathname=$6
-pandoc_metadata_pathname=$7
+input_file_pathname=$1
+output_file_pathname=$2
+css_pathname=$3
+pandoc_template_pathname=$4
+pandoc_metadata_pathname=$5
 
 pandoc \
     --css="${css_pathname}" \
@@ -14,5 +12,5 @@ pandoc \
     --template="${pandoc_template_pathname}" \
     -t html \
     "${pandoc_metadata_pathname}" \
-    $input_file \
-    -o "${html_destination_pathname}/${output_pathname}"
+    $input_file_pathname \
+    -o "${output_file_pathname}"
