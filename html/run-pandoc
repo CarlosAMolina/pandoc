@@ -3,15 +3,13 @@
 input_file=$1
 output_pathname=$2
 html_destination_pathname=$3
-
-DESTINATION_PATHNAME=/tmp/web
-PANDOC_CONFIG_DESTINATION_PATHNAME="${DESTINATION_PATHNAME}/pandoc-config"
+pandoc_config_destination_pathname=$4
 
 pandoc \
     --css="${html_destination_pathname}/styles.css" \
     --standalone \
-    --template="${PANDOC_CONFIG_DESTINATION_PATHNAME}/template.html" \
+    --template="${pandoc_config_destination_pathname}/template.html" \
     -t html \
-    "${PANDOC_CONFIG_DESTINATION_PATHNAME}/metadata.yml" \
+    "${pandoc_config_destination_pathname}/metadata.yml" \
     $input_file \
     -o "${html_destination_pathname}/${output_pathname}"
