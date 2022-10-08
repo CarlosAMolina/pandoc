@@ -2,13 +2,13 @@
 
 input_file=$1
 output_file=$2
+html_destination_pathname=$3
 
 DESTINATION_PATHNAME=/tmp/web
-HTML_DESTINATION_PATHNAME="${DESTINATION_PATHNAME}/html"
 PANDOC_CONFIG_DESTINATION_PATHNAME="${DESTINATION_PATHNAME}/pandoc-config"
 
 pandoc \
-    --css="${HTML_DESTINATION_PATHNAME}/styles.css" \
+    --css="${html_destination_pathname}/styles.css" \
     --standalone \
     --template="${PANDOC_CONFIG_DESTINATION_PATHNAME}/template.html" \
     -t html \

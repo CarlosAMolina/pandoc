@@ -6,8 +6,8 @@ md-to-html:
 	mkdir -p $(HTML_DESTINATION_PATHNAME)/other-pages
 	cp src/styles.css $(HTML_DESTINATION_PATHNAME)
 	cp -r pandoc-config/ $(DESTINATION_PATHNAME)/
-	./run-pandoc src/page.md $(HTML_DESTINATION_PATHNAME)/page.html
-	./run-pandoc src/other-pages/page-2.md $(HTML_DESTINATION_PATHNAME)/other-pages/page-2.html
+	./run-pandoc src/page.md $(HTML_DESTINATION_PATHNAME)/page.html $(HTML_DESTINATION_PATHNAME)
+	./run-pandoc src/other-pages/page-2.md $(HTML_DESTINATION_PATHNAME)/other-pages/page-2.html $(HTML_DESTINATION_PATHNAME)
 
 open-html:
 	firefox $(HTML_DESTINATION_PATHNAME)/page.html
