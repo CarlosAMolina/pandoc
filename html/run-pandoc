@@ -1,7 +1,7 @@
 #!/bin/bash
 
 input_file=$1
-output_file=$2
+output_pathname=$2
 html_destination_pathname=$3
 
 DESTINATION_PATHNAME=/tmp/web
@@ -14,4 +14,4 @@ pandoc \
     -t html \
     "${PANDOC_CONFIG_DESTINATION_PATHNAME}/metadata.yml" \
     $input_file \
-    -o $output_file
+    -o "${html_destination_pathname}/${output_pathname}"
