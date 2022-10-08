@@ -1,9 +1,3 @@
-## Contents
-
-- [Section](#section)
-- [Section 2](#section-2)
-    - [Subsection foo](#subsection-foo)
-
 ## Section
 
 Code example:
