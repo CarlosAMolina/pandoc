@@ -28,7 +28,7 @@ List example:
 - El 1.
 - El 2.
 
-Incorrect html rendered list example:
+Example of incorrect html rendered list (some css causes incorrect results):
 
 - El 1.
 
