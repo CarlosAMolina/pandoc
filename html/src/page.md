@@ -13,6 +13,9 @@ Code example:
 ```bash
 echo 'hi'
 ```
+
+This is an `inline code` example.
+
 Best web in the world: <https://cmoli.es>.
 
 Second page: [link](other-pages/page-2.html).
