@@ -12,9 +12,13 @@ Code example:
 
 ```bash
 echo 'hi'
+
+This is a long line inside a `code` tag to check its behaviour with different screen sizes.
 ```
 
 This is an `inline code` example.
+
+This is a `long inline code to check its behaviour with different screen sizes.inline code` example.
 
 Best web in the world: <https://cmoli.es>.
 
